@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     async function fetchPlayers() {
       try {
-        const res = await api.get("/players");
+        const res = await api.get("/");
         setPlayers(res.data.data || []);
       } catch (err) {
         console.error("Failed to fetch players", err);
