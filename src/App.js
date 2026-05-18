@@ -34,7 +34,7 @@ function App() {
   useEffect(() => {
     async function fetchPlayers() {
       try {
-        const res = await api.get("/");
+        const res = await api.get("/default/datagolf-backend");
         setPlayers(res.data.data || []);
       } catch (err) {
         console.error("Failed to fetch players", err);
