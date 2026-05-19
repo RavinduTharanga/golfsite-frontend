@@ -57,16 +57,17 @@ function App() {
         <thead>
           <tr>
             <th>Player</th>
+             <th>Tour ID</th>
             <th>Country</th>
-            <th>Tour</th>
+           
           </tr>
         </thead>
         <tbody>
           {players.map((p) => (
             <tr key={p.player_name}>
               <td>{p.player_name}</td>
+              <td>{p.tour_id}</td>
               <td>{p.country}</td>
-              <td>{p.tour}</td>
             </tr>
           ))}
         </tbody>
