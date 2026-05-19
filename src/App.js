@@ -56,19 +56,22 @@ function App() {
       <table>
         <thead>
           <tr>
-            <th>Player</th>
-             <th>Tour ID</th>
-            <th>Country</th>
+            <th>Player ID</th>
+             <th>Player Name</th>
+            <th>World Rank</th>
+            <th>Data Golf Rank</th>
            
           </tr>
         </thead>
         <tbody>
           {players.map((p) => (
             <tr key={p.player_name}>
+              <td>{p.dg_id}</td>
               <td>{p.player_name}</td>
-              <td>{p.tour_id}</td>
-              <td>{p.country}</td>
+              <td>{p.owgr_rank}</td>
+              <td>{p.datagolf_rank}</td>
             </tr>
+
           ))}
         </tbody>
       </table>
