@@ -34,7 +34,7 @@ function Navbar() {
       borderBottom: "1px solid #1e293b"
     }}>
       <span style={{ fontWeight: "bold", fontSize: "18px", color: "#38bdf8" }}>
-        ⛳ DataGolf
+       ⛳ Fairway Edge
       </span>
       <div style={{ marginLeft: "auto", display: "flex", gap: "24px" }}>
         <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
